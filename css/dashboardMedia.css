@@ -1,0 +1,47 @@
+/* Start of Mobile View */
+@media (max-width: 767px) {
+    
+}
+/* End of Mobile View */
+
+
+/* Start of Tablet View */
+@media (max-width: 991px) {
+    .header-section {
+        padding: 0 10px 0 50px;
+    }
+    .menu-btn {
+        display: block;
+        position: absolute;
+        left: 20px;
+    }
+    .close-btn {
+        position: absolute;
+        left: 20px;
+    }
+    .main-container {
+        padding-left: unset;
+    }
+}
+/* End of Tablet View */
+
+
+/* Start of Desktop 1024px */
+@media (max-width: 1199px) {
+
+}
+/* End of Desktop 1024px */
+
+
+/* Start of Desktop 1800px */
+@media (max-width: 1800px) {
+
+}
+/* End of Desktop 1800px */
+
+
+/* Start of Wide Screen */
+@media (min-width: 1400px) {
+    
+}
+/* Start of Wide Screen */

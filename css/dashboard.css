@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html, body {
+    scroll-behavior: smooth !important;
+}
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.header-section {
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.137) 0px 4px 7px 0px;
+    background-color: #FFF;
+    position: fixed;
+    width: 100%;
+    z-index: 1080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+header {
+    background: #045ABF;
+}
+.side-bar {
+    background: #045ABF;
+    backdrop-filter: blur(15px);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    left: -250px;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+}
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
+.close-btn {
+    display: none;
+    cursor: pointer;
+}
+.side-bar-header {
+    display: none;
+}
+.side-bar::-webkit-scrollbar {
+    width: 0px;
+}
+.side-bar {
+    z-index: 2;
+}
+.side-bar.active {
+    left: 0;
+}
+.side-bar .menu {
+    width: 100%;
+    margin-top: 30px;
+}
+.side-bar .menu .item {
+    position: relative;
+    cursor: pointer;
+}
+.side-bar .menu .item a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    width: 90%;
+    display: block;
+    padding: 12px 15px;
+    display: flex;
+    margin: auto;
+}
+.side-bar .menu .item a:hover {
+    background: #EDF4FF;
+    color: #045ABF;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.75s ease;
+}
+.side-bar .menu .item a.active {
+    background: #EDF4FF;
+    color: #045ABF;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.75s ease;
+}
+.side-bar .menu .item i {
+    margin-right: 15px;
+}
+.side-bar .menu .sub-item {
+    margin-top: 2% !important;
+}
+.side-bar .menu .item a .sub-item-dropdown {
+    position: absolute;
+    right: 0;
+    margin: 3px 20px 0px;
+    transition: 0.3s ease;
+    font-size: 12px;
+}
+.side-bar .menu .item .sub-menu {
+    background: #045ABF;
+    display: none;
+}
+.side-bar .menu .item .sub-menu .sub-item {
+    padding-left: 50px;
+    font-weight: 500;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.main-container {
+    min-height: 100vh;
+    padding-top: 70px;
+    padding-left: 250px;
+    position: relative;
+    z-index: 1;
+}
+.user-profile-img {
+    width: 45px;
+    border-radius: 20%;
+    border: 2px solid #fff;
+}
+.profile .user {
+    list-style: none;
+    line-height: 0px;
+    padding: 0 20px;
+}
+.profile .user:nth-child(1) {
+    margin-right: 20px;
+    background: #E7EDF0;
+    color: #9DACB4;
+    padding: 10px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.profile .user:nth-child(1):hover {
+    background: #d3d3d3;
+    transition: .3s;
+}
+.bell-icon {
+    font-size: 18px;
+}
+.profile .user:nth-child(2) {
+    padding-right: 5px;
+    position: relative;
+    padding-left: 30px;
+}
+.profile .user:nth-child(2)::before {
+    content: "|";
+    position: absolute;
+    left: 0;
+    top: 44%;
+    transform: translateY(-50%);
+    font-size: 37px;
+    color: #9DACB4;
+    font-weight: 200;
+}
+.img-logo-container .logo {
+    width: 100%;
+}
+.btn-toggle-profile {
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: .3s;
+}
+.btn-toggle-profile:hover {
+    background: #F2F0F9;
+}
+.dropdown-menu .dropdown-item {
+    padding: 15px 10px;
+    width: 230px;
+    transition: .5s;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #F2F0F9;
+    border-radius: 10px;
+}
+.dropdown-menu.show {
+    display: block;
+    box-shadow: 0px 0px 2px 1px #EBEBEB;
+    border: none;
+    inset: 5px auto auto 0px !important;
+    padding: 10px 15px;
+}
+.dropdown-menu.show::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -10px;
+    right: 58px;
+    z-index: 1080;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #FFF;
+    border-left: 7px solid transparent;
+    filter: drop-shadow(0px -1px 0px #EBEBEB);
+}
