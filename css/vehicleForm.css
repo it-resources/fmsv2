@@ -1,6 +1,7 @@
 
 .inner-main {
     padding: 50px;
+    overflow-x: hidden;
 }
 .header-title h3 {
     color: #C70000;
