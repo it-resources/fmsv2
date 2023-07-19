@@ -2,13 +2,14 @@
 .inner-main {
     padding: 50px;
     overflow-x: hidden;
+    width: 100%;
 }
 .header-title h3 {
     color: #C70000;
     font-weight: 700;
 }
 .form-container {
-    border: 2px solid #44679F;
+    border: 3px solid #44679F;
     border-radius: 20px;
 }
 .form-container h5 {
@@ -23,6 +24,15 @@ button, optgroup, select {
 }
 input {
     padding: .6575rem .75rem !important;
+}
+input.form-control, select.form-select, textarea.form-control {
+    border: 2px solid #ced4da;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    padding-right: calc(1.5em + .75rem) !important;
+}
+.form-control.is-valid, .was-validated .form-control:valid {
+    padding-right: calc(1.5em + .75rem) !important;
 }
 label {
     position: relative;

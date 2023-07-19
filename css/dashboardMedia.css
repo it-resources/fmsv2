@@ -1,6 +1,8 @@
 /* Start of Mobile View */
 @media (max-width: 767px) {
-    
+    .side-bar .menu .item a .sub-item-dropdown {
+        font-size: 10px;
+    }
 }
 /* End of Mobile View */
 

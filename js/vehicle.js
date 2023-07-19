@@ -8,7 +8,7 @@ function isAlphaNumWithSpace(evt,str) {
 		return false;
 	}
    	return isAlphaNum(evt);
-  }
+}
   
 var documentCount = 1;
 var rowId = 1;
@@ -142,4 +142,12 @@ filePreview.addEventListener("click", function () {
     filePreview.classList.remove("has-image");
     // Reset the input file value
     fileImage.value = "";
+});
+
+$(document).ready(function(){
+    $('#save').click(function(){
+        $('#form').addClass('was-validated');
+        $('input:required="":first').focus();
+        $('select:required="":first').focus();
+    });
 });
