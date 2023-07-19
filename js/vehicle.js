@@ -16,12 +16,12 @@ var documentNames = [];
 
 function addDocumentButton() {
     var documentRowId = rowId;
-    var documentName = $('#vehicleDocumentForm' + documentRowId + 'documentName').val().trim();
+    var documentName = $('#vehicleDocumentForm' + documentRowId + 'documentName').val();
     var documentFile = $('#vehicleDocumentForm' + documentRowId + 'documentFile').val();
     
     if (documentName != '' && documentFile != '') {
         // Check for duplicate document name
-        if (documentNames.includes(documentName.toLowerCase())) {
+        if (documentNames.includes(documentName)) {
             Swal.fire({
                 icon: 'warning',
                 title: 'Warning',
@@ -57,7 +57,7 @@ function addDocumentButton() {
         return false;
     }
 
-    documentNames.push(documentName.toLowerCase());
+    documentNames.push(documentName);
     rowId++;
 }
 
