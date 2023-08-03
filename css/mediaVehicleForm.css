@@ -31,6 +31,9 @@
     button, optgroup, select {
         padding: .7575rem 2.25rem .7575rem .75rem !important;
     }
+    input.form-control, select.form-select, textarea.form-control {
+        font-size: 14px;
+    }
 }
 /* End of Mobile View */
 
